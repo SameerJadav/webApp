@@ -1,6 +1,8 @@
 import { Metadata } from "next"
 import { Inter } from "next/font/google"
 
+import { Analytics } from "@vercel/analytics/react"
+
 import { siteConfig } from "~/config/site"
 
 import { cn } from "~/lib/utils"
@@ -23,7 +25,8 @@ export const metadata: Metadata = {
     "Next.js",
     "React",
     "Tailwind CSS",
-    "Server Components",
+    "Contentlayer",
+    "Clerk",
     "TypeScript",
   ],
   authors: [
@@ -78,9 +81,10 @@ export default function RootLayout({
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <SiteHeader />
-          <main className="flex-1">{children}</main>
+          <main className="mt-2.5 flex-1 py-5">{children}</main>
           <SiteFooter />
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   )
