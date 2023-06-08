@@ -9,6 +9,7 @@ import { cn } from "~/lib/utils"
 import { buttonVariants } from "~/components/ui/button"
 
 import GuidesShowcase from "~/components/guides-showcase"
+import { Icons } from "~/components/icons"
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
       <div className="pb-10 pt-4 md:flex md:h-hero md:flex-col md:items-center md:justify-center md:py-0">
         <a
           href={siteConfig.links.twitter}
-          className="rounded-2xl bg-[--mauve3] px-4 py-1.5 text-sm font-medium hover:bg-[--mauve4]"
+          className="rounded-2xl bg-[--mauve3] px-4 py-1.5 text-sm font-medium transition-colors hover:bg-[--mauve4]"
           target="_blank"
         >
           Follow along on Twitter
@@ -43,9 +44,13 @@ export default function Home() {
             href={siteConfig.links.github}
             target="_blank"
             rel="noreferrer"
-            className={cn(buttonVariants({ variant: "outline" }))}
+            className={cn(
+              buttonVariants({ variant: "outline" }),
+              "flex items-center gap-2"
+            )}
           >
-            GitHub
+            <span>GitHub</span>
+            <Icons.externalLink className="h-4 w-4" />
           </a>
         </div>
       </div>
