@@ -11,7 +11,7 @@ import { ThemeToggle } from "~/components/theme-toggle"
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-40 w-full border-b shadow-sm backdrop-blur">
+    <header className="sticky top-0 z-40 w-full border-b bg-[--mauve1] shadow-sm">
       <div className="container flex items-center justify-between py-4">
         <Link href="/" className="flex items-center gap-2">
           <Icons.logo className="h-6 w-6" />

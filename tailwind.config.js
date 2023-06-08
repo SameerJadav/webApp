@@ -11,6 +11,9 @@ module.exports = {
       },
     },
     extend: {
+      height: {
+        hero: `calc(100vh - 96px)`,
+      },
       borderRadius: {
         lg: `var(--radius)`,
         md: `calc(var(--radius) - 2px)`,
