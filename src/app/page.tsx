@@ -24,7 +24,7 @@ export default function Home() {
         </a>
         <h1 className="my-4 text-3xl font-extrabold leading-tight tracking-tight md:text-center md:text-6xl lg:leading-[1.1]">
           <Balancer>
-            Comprehensive Guide for Developing Modern Web Applications.
+            Comprehensive Guide for Building Modern Web Applications.
           </Balancer>
         </h1>
         <p className="mb-8 max-w-3xl text-lg text-[--mauve11] md:text-center md:text-xl">
@@ -36,9 +36,13 @@ export default function Home() {
         <div className="flex items-center gap-2 md:gap-4">
           <Link
             href="/guides"
-            className={cn(buttonVariants({ variant: "default" }))}
+            className={cn(
+              buttonVariants({ variant: "default" }),
+              "relative flex items-center gap-2 before:absolute before:-inset-0.5 before:z-[-1] before:rounded-md before:bg-gradient-to-r before:from-[--orange7] before:via-[--pink7] before:to-[--violet7] before:blur-sm hover:before:from-[--orange8] hover:before:via-[--pink8] hover:before:to-[--violet8]"
+            )}
           >
             Get Started
+            <Icons.arrowRight className="h-4 w-4" />
           </Link>
           <a
             href={siteConfig.links.github}

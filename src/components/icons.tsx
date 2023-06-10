@@ -1,4 +1,5 @@
 import {
+  ArrowRight,
   Laptop,
   type Icon as LucideIcon,
   LucideProps,
@@ -16,6 +17,7 @@ export const Icons = {
   twitter: Twitter,
   laptop: Laptop,
   menu: PanelLeftOpen,
+  arrowRight: ArrowRight,
   externalLink: (props: LucideProps) => (
     <svg viewBox="0 0 15 15" fill="currentColor" {...props}>
       <path
