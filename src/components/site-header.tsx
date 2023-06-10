@@ -15,7 +15,7 @@ import MobileNav from "./mobile-nav"
 export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-[--mauve1] shadow-sm">
-      <div className="container flex items-center justify-between py-4">
+      <div className="container flex items-center justify-between py-2">
         <div className="flex items-center gap-6">
           <Link href="/" className="flex items-center gap-2">
             <Icons.logo className="hidden h-6 w-6 md:inline-block" />
@@ -24,7 +24,7 @@ export function SiteHeader() {
           </Link>
           <MainNav />
         </div>
-        <nav className="flex items-center space-x-2">
+        <nav className="flex items-center gap-1">
           <a href={siteConfig.links.github} target="_blank" rel="noreferrer">
             <div
               className={cn(
