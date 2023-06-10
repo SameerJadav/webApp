@@ -38,7 +38,7 @@ export default function Home() {
             href="/guides"
             className={cn(
               buttonVariants({ variant: "default" }),
-              "relative flex items-center gap-2 before:absolute before:-inset-0.5 before:z-[-1] before:rounded-md before:bg-gradient-to-r before:from-[--orange7] before:via-[--pink7] before:to-[--violet7] before:blur-sm hover:before:from-[--orange8] hover:before:via-[--pink8] hover:before:to-[--violet8]"
+              "relative flex items-center gap-2 before:absolute before:-inset-0.5 before:z-[-1] before:rounded-md before:bg-gradient-to-r before:from-[--orange7] before:via-[--pink7] before:to-[--violet7] before:blur-md hover:before:from-[--orange8] hover:before:via-[--pink8] hover:before:to-[--violet8]"
             )}
           >
             Get Started
