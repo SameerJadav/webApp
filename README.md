@@ -8,7 +8,7 @@ Learn how to build modern Web Apps that will elevate your developer experience.
 
 ## About this project
 
-This project is a comprehensive guide to building modern web apps. It's a collection of best practices, I've learned over the year.
+This project is your go-to guide for building modern web apps. It's packed with best practices I've learned over the years. While I won't cover every possible thing you can do with these tools, I'll focus on the most important ones that are sufficient for building the majority of web apps. The guides will include all the important links you need to dive deeper into each tool.
 
 ## Features
 
@@ -25,17 +25,21 @@ This project is a comprehensive guide to building modern web apps. It's a collec
 
 ## Roadmap
 
-- [ ] Add `/guides` dir with contentlayer
-- [ ] Add OG image for guides using `@vercel/og`
-- [ ] Write guides
+- [ ] Create guides
+- [ ] Set up a `/guides` directory with contentlayer
+- [ ] Include a contribution guide page
+- [ ] Add an "Edit this page" link
+- [ ] Implement a "Was this helpful?" component
+- [ ] Add loading UI
+- [ ] Generate OG images for guides using `@vercel/og`
 
-### Running Locally
+## Running Locally
 
 To run this project on your local machine, simply clone this repository and ensure you have the required dependencies installed using **pnpm**.
 
-### Colours Use Cases
+### Colors Use Cases
 
-> I am using [radix colours](https://www.radix-ui.com/colors) for this project. The radix colour system an open-source color system for designing beautiful, accessible websites and apps.
+> I am using [radix colors](https://www.radix-ui.com/colors) for this project. The radix colour system an open-source color system for designing beautiful, accessible websites and apps.
 
 There are 12 steps in each scale. Each step was designed for at least one specific use case.
 
