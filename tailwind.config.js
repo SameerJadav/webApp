@@ -12,7 +12,7 @@ module.exports = {
     },
     extend: {
       height: {
-        hero: `calc(100vh - 96px)`,
+        hero: `calc(100vh - 5.4375rem)`,
       },
       borderRadius: {
         lg: `var(--radius)`,

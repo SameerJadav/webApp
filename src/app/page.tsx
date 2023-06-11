@@ -13,7 +13,7 @@ import { Icons } from "~/components/icons"
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className="container mt-2.5 py-5">
       <div className="pb-10 pt-4 md:flex md:h-hero md:flex-col md:items-center md:justify-center md:py-0">
         <a
           href={siteConfig.links.twitter}

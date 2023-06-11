@@ -81,7 +81,7 @@ export default function RootLayout({
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <SiteHeader />
-          <main className="mt-2.5 flex-1 py-5">{children}</main>
+          <main className="flex-1">{children}</main>
           <SiteFooter />
         </ThemeProvider>
         <Analytics />
