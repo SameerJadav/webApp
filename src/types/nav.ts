@@ -9,6 +9,7 @@ export interface NavItem {
   label?: string
 }
 
+// For creating nested navigation menus
 export interface NavItemWithChildren extends NavItem {
   items: NavItemWithChildren[]
 }

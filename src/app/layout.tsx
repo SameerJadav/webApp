@@ -63,6 +63,9 @@ export const metadata: Metadata = {
     images: [siteConfig.ogImage],
     creator: "@SameerJadav_",
   },
+  alternates: {
+    canonical: siteConfig.url,
+  },
   manifest: `${siteConfig.url}/site.webmanifest`,
 }
 
@@ -75,11 +78,16 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "relative flex min-h-screen flex-col antialiased",
+          "relative flex min-h-screen flex-col bg-[--mauve1] text-[--mauve12] antialiased",
           inter.className
         )}
       >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          enableColorScheme
+        >
           <SiteHeader />
           <main className="flex-1">{children}</main>
           <SiteFooter />
