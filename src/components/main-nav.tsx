@@ -8,7 +8,7 @@ import { cn } from "~/lib/utils"
 export default function MainNav() {
   const pathname = usePathname()
   return (
-    <nav className="hidden md:inline-block">
+    <nav className="hidden font-medium md:inline-block">
       <Link
         href="/guides"
         className={cn(

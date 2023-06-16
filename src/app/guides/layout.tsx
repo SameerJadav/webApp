@@ -11,7 +11,7 @@ interface DocsLayoutProps {
 export default function DocsLayout({ children }: DocsLayoutProps) {
   return (
     <div className="container flex">
-      <aside className="group hidden h-[calc(100vh-3.5625rem)] w-60 overflow-y-auto md:block">
+      <aside className="sticky top-[3.3125rem] hidden h-[calc(100vh-3.5625rem)] w-60 overflow-y-auto md:block">
         <ScrollArea className="py-8 pr-2">
           <DocsSidebarNav items={docsConfig.sidebarNav} />
         </ScrollArea>
