@@ -17,6 +17,15 @@ export default function SiteFooter() {
           >
             Sameer Jadav
           </a>
+          . Hosted on{" "}
+          <a
+            href="https://vercel.com"
+            target="_blank"
+            rel="noreferrer"
+            className="font-medium underline underline-offset-4 transition-colors hover:text-[--mauve12]"
+          >
+            Vercel
+          </a>
           . The source code is available on{" "}
           <a
             href={siteConfig.links.github}

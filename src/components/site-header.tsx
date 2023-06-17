@@ -14,13 +14,15 @@ import MobileNav from "./mobile-nav"
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-40 w-full border-b bg-[--mauve1] shadow-sm">
-      <div className="container flex items-center justify-between py-2">
-        <div className="flex items-center gap-6">
+    <header className="sticky top-0 z-10 w-full border-b bg-[#fdfcfd]/90 shadow-sm backdrop-blur dark:bg-[#161618]/90">
+      <div className="container flex items-center justify-between py-4">
+        <div className="flex items-center gap-2 md:gap-6">
+          <MobileNav />
           <Link href="/" className="flex items-center gap-2">
             <Icons.logo className="hidden h-6 w-6 md:inline-block" />
-            <MobileNav />
-            <span className="font-bold">{siteConfig.name}</span>
+            <span className="text-lg font-bold leading-none">
+              {siteConfig.name}
+            </span>
           </Link>
           <MainNav />
         </div>

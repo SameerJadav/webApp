@@ -36,6 +36,9 @@ export const metadata: Metadata = {
     },
   ],
   creator: siteConfig.author,
+  icons: {
+    icon: "/logo.svg",
+  },
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "white" },
     { media: "(prefers-color-scheme: dark)", color: "black" },
