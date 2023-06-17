@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "format:check": "prettier --check \"**/*.{ts,tsx,mdx}\" --cache",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "contentlayer build && tsc --noEmit",
     "preview": "next build && next start"
   },
   "dependencies": {
