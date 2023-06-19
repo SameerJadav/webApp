@@ -60,6 +60,13 @@ This table is a simple overview of the most common use case for each step. Howev
 | 11   | Low-contrast text                       |
 | 12   | High-contrast text                      |
 
+## Inspired by
+
+- [Taxonomy](https://tx.shadcn.com)
+- [nextra](https://nextra.site)
+- [nan.fyi](https://www.nan.fyi)
+- [Next.js](https://nextjs.org)
+
 ## License
 
 Licensed under the [MIT license](./LICENSE.md).

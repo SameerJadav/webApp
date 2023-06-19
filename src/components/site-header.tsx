@@ -9,6 +9,7 @@ import { buttonVariants } from "~/components/ui/button"
 import { Icons } from "~/components/icons"
 import { ThemeToggle } from "~/components/theme-toggle"
 
+import { CommandMenu } from "./command-menu"
 import MainNav from "./main-nav"
 import MobileNav from "./mobile-nav"
 
@@ -20,13 +21,19 @@ export function SiteHeader() {
           <MobileNav />
           <Link href="/" className="flex items-center gap-2">
             <Icons.logo className="hidden h-6 w-6 md:inline-block" />
-            <span className="text-lg font-bold leading-none">
+            <span className="hidden text-lg font-bold leading-none md:inline-block">
               {siteConfig.name}
             </span>
+            <div className="md:hidden">
+              <CommandMenu />
+            </div>
           </Link>
           <MainNav />
         </div>
         <nav className="flex items-center gap-1">
+          <div className="hidden md:inline-block">
+            <CommandMenu />
+          </div>
           <a href={siteConfig.links.github} target="_blank" rel="noreferrer">
             <div
               className={cn(
